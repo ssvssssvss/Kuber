@@ -15,6 +15,6 @@ spec:
       containers:
       - name: my-python-app
         image: my-python-app:latest  # Используем ранее собранный Docker-образ
+        imagePullPolicy: Never
         ports:
         - containerPort: 80
-        imagePullPolicy: Never
